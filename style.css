@@ -11,6 +11,12 @@
 body {
   font-family: "Tajawal", sans empattement;
   position: relative;
+  overflow: auto;
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
 }
 
 a {
@@ -262,7 +268,7 @@ input[type="checkbox"] {
   }
 }
 /* ************************************************************************** */
-/* .bgimg-one {
+.bgimg-one {
   display: block;
   max-width: 99%;
 
@@ -275,7 +281,7 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   z-index: -7;
-} */
+}
 .header-page {
   z-index: 10;
   display: flex;
@@ -290,7 +296,7 @@ input[type="checkbox"] {
 }
 .text h1 {
   text-align: right;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 64px;
   line-height: 93px;
 }
@@ -353,7 +359,7 @@ input[type="checkbox"] {
     padding: 90px 0px 9px 136px;
   }
 }
-@media (max-width: 1631px) {
+/* @media (max-width: 1631px) {
   .header-page {
     text-align: center;
     align-items: center;
@@ -368,9 +374,37 @@ input[type="checkbox"] {
   .text h1 {
     text-align: center;
   }
-}
-@media (max-width: 1500px) {
+} */
+@media (max-width: 1635px) {
   .header-img {
+    display: none;
+  }
+  .header-page {
+    text-align: center;
+    justify-content: center;
+  }
+  .text {
+    text-align: center;
+    background-color: #eaf8fc;
+    padding: 50px 221px 50px 221px;
+    border-radius: 40px;
+  }
+  .text h1 {
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 1500px) {
+  .header-img {
+    display: none;
+  }
+} */
+.video {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1860px) {
+  .bgimg-one {
     display: none;
   }
 }
