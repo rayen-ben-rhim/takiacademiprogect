@@ -1,14 +1,16 @@
 /* UTILITIES */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:wght@500&family=Tajawal&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Tajawal, sans-serif;
+  font-family: "Tajawal", sans empattement;
 }
 
 body {
-  font-family: cursive;
+  font-family: "Tajawal", sans empattement;
+  position: relative;
 }
 
 a {
@@ -22,12 +24,14 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 10px 9px 12px 3px;
+  position: sticky;
+  top: 0;
+  padding: 10px 102px 12px 109px;
 
   background-color: rgb(255, 255, 255);
   color: #fff;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.156);
+  z-index: 9999;
 }
 .item {
   display: flex;
@@ -257,16 +261,145 @@ input[type="checkbox"] {
     display: flex;
   }
 }
-.bgimg-one {
+/* ************************************************************************** */
+/* .bgimg-one {
   display: block;
   max-width: 99%;
-  width: initial;
-  height: initial;
+
   background: none;
   opacity: 1;
+  position: absolute;
   border: 0px;
   margin: 0px;
-  padding: 18px 39px 28px 38px;
+  padding: 28px 39px 9px 84px;
   justify-content: center;
   align-items: center;
+  z-index: -7;
+} */
+.header-page {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  /* position: absolute; */
+  /* max-width: 1525px; */
+  width: 95%;
+  padding: 90px 39px 164px 136px;
+  gap: 10rem;
+}
+.text h1 {
+  text-align: right;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 93px;
+}
+.text {
+  text-align: right;
+  gap: 3rem;
+  display: grid;
+}
+.text p {
+  text-align: right;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 41px;
+  color: #00000087;
+}
+.flawer {
+  background-color: rgba(255, 255, 0, 0.437);
+}
+.firstPage {
+  display: block;
+  position: relative;
+}
+/*  {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 100;
+}
+
+.firstPage::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -10;
+  background-image: url("./img/Group 4730.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 96%;
+  height: 90%;
+} */
+.btn-g {
+  width: 204px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid #35bbe3;
+  background-color: #35bbe3;
+}
+.btn-g:hover {
+  border: 1px solid #35bbe3;
+  color: #35bbe3;
+  background-color: #fff;
+}
+@media (max-width: 1750px) {
+  .header-page {
+    padding: 90px 0px 9px 136px;
+  }
+}
+@media (max-width: 1631px) {
+  .header-page {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    text-align: center;
+    background-color: #35bae387;
+    padding: 50px 250px 50px 250%;
+    border-radius: 40px;
+  }
+  .text h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 1500px) {
+  .header-img {
+    display: none;
+  }
+}
+/* *****************************************
+*********************************************
+ */
+
+.second-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.p-part {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+}
+.title-h2 h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 66px;
+}
+.left {
+  margin-bottom: 244px;
+  margin-right: 40px;
+}
+.right {
+  margin-bottom: 244px;
+  margin-left: 40px;
 }
