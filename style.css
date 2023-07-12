@@ -257,3 +257,16 @@ input[type="checkbox"] {
     display: flex;
   }
 }
+.bgimg-one {
+  display: block;
+  max-width: 99%;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 18px 39px 28px 38px;
+  justify-content: center;
+  align-items: center;
+}
