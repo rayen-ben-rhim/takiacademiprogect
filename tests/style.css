@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:wght@500&family=Tajawal&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans empattement;
+  scroll-behavior: smooth;
+}
+.icon-hover {
+  padding: 8px 26px 9px 25px;
+  background-color: #ffffff;
+  /* border-style: dashed; */
+  max-width: 237px;
+  width: 100%;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border-color: #dbdbdb;
+}
+.img-svg-icon {
+  width: 92px;
+  height: 122.38px;
+}
+.all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+  gap: 10px;
+}
+.a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.b {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
